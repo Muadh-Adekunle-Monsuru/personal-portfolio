@@ -31,7 +31,7 @@ const slideVariants = {
 		opacity: 1,
 		scale: 1,
 		transition: {
-			duration: 1.1,
+			duration: 0.8,
 			type: 'tween',
 		},
 	},
@@ -40,7 +40,7 @@ const slideVariants = {
 		y: '-4%',
 		scale: 0.9,
 		transition: {
-			duration: 0.4,
+			duration: 0.2,
 			type: 'tween',
 		},
 	},
@@ -71,7 +71,10 @@ export default function Carousel({ data }: input) {
 			prevIndex - 1 < 0 ? data.length - 1 : prevIndex - 1
 		);
 	};
-
+	function generateGradientColor(index: number, totalRows: number) {
+		const hue = (160 / totalRows) * index;
+		return `hsl(${hue}deg 70% 95%)`;
+	}
 	return (
 		<div className='h-full w-full lg:p-2 relative'>
 			<div className='rounded-xl h-full  overflow-hidden   flex flex-col'>
@@ -86,33 +89,14 @@ export default function Carousel({ data }: input) {
 						whileInView='visible'
 					>
 						<div className='h-3/4 w-full object-contain flex items-center justify-center'>
-							{/* <img
+							<img
 								src={data[currentIndex].img}
-								className='h-72 object-contain hover:scale-110 ease-in-out transition duration-500'
+								className='h-72 object-contain hover:scale-105 ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
 							/>
 							<img
 								src={data[currentIndex].img2}
-								className='-ml-[100px] h-72 object-contain hover:scale-110 ease-in-out transition duration-500'
-							/> */}
-							<picture>
-								<source
-									srcSet={`${data[currentIndex].img}`}
-									media='(min-width: 1000px)'
-									height='600'
-									width='400'
-								/>
-								<source
-									srcSet={`${data[currentIndex].img2}`}
-									media='(min-width: 600px)'
-								/>
-								{/* The <img> tag is a fallback image (required in the <picture> tag) */}
-								<img
-									src={data[currentIndex].img}
-									height='300'
-									width='200'
-									alt='Awesome image'
-								/>
-							</picture>
+								className='-ml-[100px] h-72 object-contain hover:scale-105 ease-in-out transition duration-500 z-20 drop-shadow-lg hover:drop-shadow-2xl'
+							/>
 						</div>
 						<div className='grid lg:flex justify-between backdrop-blur-sm h-1/4 p-3'>
 							<div>
@@ -122,16 +106,24 @@ export default function Carousel({ data }: input) {
 								<p className='text-xs lg:text-sm font-light'>
 									{data[currentIndex].description}
 								</p>
-								<div className='flex gap-3'>
+								<div className='flex gap-3 pt-2'>
 									{data[currentIndex].stack.map(
-										(val: String, index: number) => (
-											<p
-												className='text-xs lg:text-sm border rounded-3xl p-2 cursor-pointer select-none hover:scale-105 hover:shadow-sm'
-												key={index}
-											>
-												{val}
-											</p>
-										)
+										(val: String, index: number) => {
+											const color = generateGradientColor(index, 5);
+											console.log(color);
+											const google = 'https://www.google.com/search?q=';
+											return (
+												<a href={`${google}${val}`} target='_blank'>
+													<p
+														className={`text-xs  border rounded-3xl p-2  select-none hover:scale-105 hover:shadow-sm `}
+														style={{ backgroundColor: color }}
+														key={index}
+													>
+														{val}
+													</p>
+												</a>
+											);
+										}
 									)}
 								</div>
 							</div>

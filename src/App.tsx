@@ -142,14 +142,23 @@ function App() {
 		<main className='font-inter text-[#404040] '>
 			<div className='lg:h-screen flex items-center justify-center'>
 				<div className='lg:px-56 p-11  mx-auto w-auto'>
-					<motion.h1
-						className='text-4xl  font-semibold mt-10'
-						initial={{ y: 10, opacity: 0 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{ type: 'tween', delay: 0.1, duration: 1 }}
-					>
-						Hi, I'm Muadh Monsur
-					</motion.h1>
+					<div className='w-20 h-20 rounded-full overflow-hidden border-[10px]'>
+						<motion.img
+							src='/mockups/profile.webp'
+							alt='my-profil-picture'
+							className=' outline-[20px] outline-white hover:translate-y-20 transition duration-700 ease-in-out'
+						/>
+					</div>
+					<div className='flex gap-3 items-center mt-5'>
+						<motion.h1
+							className='text-4xl  font-semibold '
+							initial={{ y: 10, opacity: 0 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ type: 'tween', delay: 0.1, duration: 1 }}
+						>
+							Hi, I'm Muadh Monsur
+						</motion.h1>
+					</div>
 					<motion.p
 						className=' py-6 font-light leading-loose'
 						initial={{ y: 10, opacity: 0 }}
