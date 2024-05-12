@@ -15,8 +15,8 @@ function App() {
 	const carouselData = [
 		{
 			title: 'Employee Management Dashboard',
-			img: '/mockups/p1-laptop.png',
-			img2: '/mockups/p1-phone.png',
+			img: '/mockups/p1-laptop.png.webp',
+			img2: '/mockups/p1-phone.png.webp',
 			description: 'An employee management dashboard for Appollonia Dentals',
 			stack: [
 				'NextJs',
@@ -34,8 +34,8 @@ function App() {
 		},
 		{
 			title: 'Cinema Seat Reservation',
-			img: '/mockups/p2-laptop.png',
-			img2: '/mockups/p2-phone.png',
+			img: '/mockups/p2-laptop.png.webp',
+			img2: '/mockups/p2-phone.png.webp',
 			description: 'Online seat reservation for The Cinema',
 			stack: [
 				'Vite',
@@ -53,8 +53,8 @@ function App() {
 		},
 		{
 			title: 'Weather App',
-			img: '/mockups/p3-laptop.png',
-			img2: '/mockups/p3-mobile.png',
+			img: '/mockups/p3-laptop.png.webp',
+			img2: '/mockups/p3-mobile.png.webp',
 			description: 'Weather Forecast Checker for major European cities',
 			stack: [
 				'Vite',
@@ -71,8 +71,8 @@ function App() {
 		},
 		{
 			title: 'Crypt.Me',
-			img: '/mockups/p4-laptop.png',
-			img2: '/mockups/p4-mobile.png',
+			img: '/mockups/p4-laptop.png.webp',
+			img2: '/mockups/p4-mobile.png.webp',
 			description: 'Crypto app landing page.',
 			stack: ['Vite', 'React', 'Vercel', 'Tailwind'],
 			links: {
@@ -82,8 +82,8 @@ function App() {
 		},
 		{
 			title: 'Where in the world?',
-			img: '/mockups/p5-laptop.png',
-			img2: '/mockups/5-mobile.png',
+			img: '/mockups/p5-laptop.png.webp',
+			img2: '/mockups/p5-mobile.png.webp',
 			description: 'Mini encyclopedia for every country.',
 			stack: ['Vite', 'React', 'Vercel', 'Tailwind', 'Supabase'],
 			links: {
@@ -93,8 +93,8 @@ function App() {
 		},
 		{
 			title: 'Hub QRCode Checker',
-			img: '/mockups/p6-laptop.png',
-			img2: '/mockups/p6-mobile.png',
+			img: '/mockups/p6-laptop.png.webp',
+			img2: '/mockups/p6-mobile.png.webp',
 			description:
 				'Prototype dashboard to check students details using QR Code attached to the ID.',
 			stack: ['Vite', 'React', 'Vercel', 'Tailwind', 'Supabase'],
@@ -105,8 +105,8 @@ function App() {
 		},
 		{
 			title: 'Former Portfolio Page',
-			img: '/mockups/p7-laptop.png',
-			img2: '/mockups/p7-mobile.png',
+			img: '/mockups/p7-laptop.png.webp',
+			img2: '/mockups/p7-mobile.png.webp',
 			description:
 				'My former portfolio page which showcases older web projects.',
 			stack: ['Hugo', 'Netlify', 'Bootstrap'],
@@ -117,8 +117,8 @@ function App() {
 		},
 		{
 			title: 'My Landing Page',
-			img: '/mockups/p8-laptop.png',
-			img2: '/mockups/p8-mobile.png',
+			img: '/mockups/p8-laptop.png.webp',
+			img2: '/mockups/p8-mobile.png.webp',
 			description: 'My landing page.',
 			stack: ['Carrd'],
 			links: {
@@ -128,8 +128,8 @@ function App() {
 		},
 		{
 			title: 'LingoQL',
-			img: '/mockups/p9-laptop.png',
-			img2: '/mockups/p9-mobile.png',
+			img: '/mockups/p9-laptop.png.webp',
+			img2: '/mockups/p9-mobile.png.webp',
 			description: 'Revolutionize your query experience.',
 			stack: ['Vite', 'React', 'Appwrite'],
 			links: {
@@ -162,7 +162,7 @@ function App() {
 						Supabase and MongoDB for database solutions.
 					</motion.p>
 					<motion.a
-						className='flex lg:w-56 p-2 px-5 font-semibold items-center bg-white my-7 rounded-lg py-4 gap-3 shadow-sm justify-center'
+						className='flex lg:w-56 p-2 px-5 font-semibold items-center bg-white my-7 rounded-lg py-4 gap-3 shadow-sm justify-center cursor-pointer select-none'
 						initial={{ y: 10, opacity: 0 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{ type: 'spring' }}
