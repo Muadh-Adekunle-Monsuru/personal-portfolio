@@ -76,86 +76,83 @@ export default function Carousel({ data }: input) {
 		return `hsl(${hue}deg 70% 95%)`;
 	}
 	return (
-		<div className='h-full w-full lg:p-2 relative'>
-			<div className='rounded-xl h-full  overflow-hidden   flex flex-col'>
-				<AnimatePresence mode='wait'>
-					<motion.div
-						className='h-full overflow-hidden flex flex-col'
-						key={currentIndex}
-						initial={direction === 'right' ? 'hiddenRight' : 'hiddenLeft'}
-						animate='visible'
-						exit={'exit'}
-						variants={slideVariants}
-						whileInView='visible'
-					>
-						<div className='h-3/4 w-full object-contain flex items-center justify-center'>
-							<img
-								src={data[currentIndex].img}
-								className='h-72 object-contain hover:scale-105 ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
-							/>
-							<img
-								src={data[currentIndex].img2}
-								className='-ml-[100px] h-72 object-contain hover:scale-105 ease-in-out transition duration-500 z-20 drop-shadow-lg hover:drop-shadow-2xl'
-							/>
-						</div>
-						<div className='grid lg:flex justify-between backdrop-blur-sm h-1/4 p-3'>
-							<div>
-								<h1 className='font-semibold lg:text-3xl '>
-									{data[currentIndex].title}
-								</h1>
-								<p className='text-xs lg:text-sm font-light'>
-									{data[currentIndex].description}
-								</p>
-								<div className='flex gap-3 pt-2'>
-									{data[currentIndex].stack.map(
-										(val: String, index: number) => {
-											const color = generateGradientColor(index, 5);
-											console.log(color);
-											const google = 'https://www.google.com/search?q=';
-											return (
-												<a href={`${google}${val}`} target='_blank'>
-													<p
-														className={`text-xs  border rounded-3xl p-2  select-none hover:scale-105 hover:shadow-sm `}
-														style={{ backgroundColor: color }}
-														key={index}
-													>
-														{val}
-													</p>
-												</a>
-											);
-										}
-									)}
-								</div>
+		<div className='h-full w-full lg:p-2 relative rounded-xl  overflow-hidden flex flex-col'>
+			<AnimatePresence mode='wait'>
+				<motion.div
+					className='h-full overflow-hidden flex flex-col'
+					key={currentIndex}
+					initial={direction === 'right' ? 'hiddenRight' : 'hiddenLeft'}
+					animate='visible'
+					exit={'exit'}
+					variants={slideVariants}
+					whileInView='visible'
+				>
+					<div className='h-1/2 md:h-3/4 w-full object-contain flex items-center justify-center'>
+						<img
+							src={data[currentIndex].img}
+							className='h-72 object-contain hover:scale-105 ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
+						/>
+						<img
+							src={data[currentIndex].img2}
+							className='-ml-[100px] h-72 object-contain hover:scale-105 ease-in-out transition duration-500 z-20 drop-shadow-lg hover:drop-shadow-2xl'
+						/>
+					</div>
+					<div className='grid lg:flex justify-between backdrop-blur-sm h-1/2 md:h-1/4 p-3'>
+						<div>
+							<h1 className='font-semibold text-3xl '>
+								{data[currentIndex].title}
+							</h1>
+							<p className='text-sm font-light'>
+								{data[currentIndex].description}
+							</p>
+							<div className='flex gap-3 pt-2 flex-wrap'>
+								{data[currentIndex].stack.map((val: String, index: number) => {
+									const color = generateGradientColor(index, 5);
+									console.log(color);
+									const google = 'https://www.google.com/search?q=';
+									return (
+										<a href={`${google}${val}`} target='_blank' key={index}>
+											<p
+												className={`text-sm border rounded-3xl p-2  select-none hover:scale-105 hover:shadow-sm `}
+												style={{ backgroundColor: color }}
+											>
+												{val}
+											</p>
+										</a>
+									);
+								})}
 							</div>
-							<div className='flex gap-3'>
-								<a href={data[currentIndex].links.github} target='_blank'>
+						</div>
+						<div className='flex gap-3'>
+							<a href={data[currentIndex].links.github} target='_blank'>
+								<div className='w-7'>
 									<Githubicon />
-								</a>
-								<a href={data[currentIndex].links.vercel} target='_blank'>
-									<Globe />
-								</a>
-							</div>
+								</div>
+							</a>
+							<a href={data[currentIndex].links.vercel} target='_blank'>
+								<Globe />
+							</a>
 						</div>
-					</motion.div>
-				</AnimatePresence>
-				<div className='flex gap-5 justify-end absolute right-5 bottom-6'>
-					<motion.div
-						variants={slidersVariants}
-						whileHover='hover'
-						className='left'
-						onClick={handlePrevious}
-					>
-						<ArrowLeftCircleIcon className='w-10' />
-					</motion.div>
-					<motion.div
-						variants={slidersVariants}
-						whileHover='hover'
-						className='right'
-						onClick={handleNext}
-					>
-						<ArrowRightCircleIcon className='w-10' />
-					</motion.div>
-				</div>
+					</div>
+				</motion.div>
+			</AnimatePresence>
+			<div className='flex gap-5 justify-end absolute right-5 bottom-0 lg:bottom-5 '>
+				<motion.div
+					variants={slidersVariants}
+					whileHover='hover'
+					className='left'
+					onClick={handlePrevious}
+				>
+					<ArrowLeftCircleIcon className='w-14 lg:w-10' />
+				</motion.div>
+				<motion.div
+					variants={slidersVariants}
+					whileHover='hover'
+					className='right'
+					onClick={handleNext}
+				>
+					<ArrowRightCircleIcon className='w-14 lg:w-10' />
+				</motion.div>
 			</div>
 		</div>
 	);
