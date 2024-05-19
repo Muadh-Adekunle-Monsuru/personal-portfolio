@@ -75,11 +75,32 @@ function App() {
 			title: 'Multi-Form Game Booking Page',
 			img: '/mockups/p10-laptop.png.webp',
 			img2: '/mockups/p10-mobile.png.webp',
-			description: 'An multi-paged form for booking a gaming service.',
+			description: 'A multi-paged form for booking a gaming service.',
 			stack: ['Redux', 'Vite', 'Vercel', 'Tailwind', 'EmailJs', 'Typescript'],
 			links: {
 				github: 'https://github.com/Muadh-Adekunle-Monsuru/multi-form-login',
 				vercel: 'https://love-gaming-form.vercel.app/',
+			},
+		},
+		{
+			title: 'Game Booking Dashboard',
+			img: '/mockups/p12-laptop.png.webp',
+			img2: '/mockups/p10mobile.png.webp',
+			description:
+				'Dashboard for viewing and dispatching all game booking made.',
+			stack: [
+				'Redux',
+				'Tanstack Query',
+				'Vite',
+				'Vercel',
+				'Tailwind',
+				'Typescript',
+				'AG-Grid',
+			],
+			links: {
+				github:
+					'https://github.com/Muadh-Adekunle-Monsuru/Love-Gaming-Dashboard',
+				vercel: 'https://love-gaming-dashboard.vercel.app/',
 			},
 		},
 		{
@@ -88,6 +109,26 @@ function App() {
 			img2: '/mockups/p4-mobile.png.webp',
 			description: 'Crypto app landing page.',
 			stack: ['Vite', 'React', 'Vercel', 'Tailwind'],
+			links: {
+				github: 'https://github.com/Muadh-Adekunle-Monsuru/crypt.me',
+				vercel: 'https://crypt-me.vercel.app/',
+			},
+		},
+		{
+			title: 'Rock Paper Scissors Game',
+			img: '/mockups/p11-laptop.png.webp',
+			img2: '/mockups/p11-mobile.png.webp',
+			description:
+				'Beautifly crafted game of Rock, Paper, Sciccors. With a bonus rendition from Big Bang Theory.',
+			stack: [
+				'Redux',
+				'Framer Motion',
+				'Vite',
+				'React',
+				'Vercel',
+				'Tailwind',
+				'Typescript',
+			],
 			links: {
 				github: 'https://github.com/Muadh-Adekunle-Monsuru/crypt.me',
 				vercel: 'https://crypt-me.vercel.app/',
