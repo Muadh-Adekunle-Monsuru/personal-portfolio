@@ -130,8 +130,8 @@ function App() {
 				'Typescript',
 			],
 			links: {
-				github: 'https://github.com/Muadh-Adekunle-Monsuru/crypt.me',
-				vercel: 'https://crypt-me.vercel.app/',
+				github: 'https://github.com/Muadh-Adekunle-Monsuru/rock-paper-scissors',
+				vercel: 'https://little-rock.vercel.app/',
 			},
 		},
 		{
