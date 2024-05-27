@@ -16,6 +16,26 @@ function App() {
 	};
 	const carouselData = [
 		{
+			title: 'Chirp',
+			img: '/mockups/p13-laptop.png.webp',
+			img2: '/mockups/p1-phone.png.webp',
+			description: 'A text only microblogging site.',
+			stack: [
+				'Redux',
+				'Tanstack Query',
+				'NextJs',
+				'MongoDB',
+				'Vercel',
+				'Tailwind',
+				'Framer Motion',
+				'Typescript',
+			],
+			links: {
+				github: 'https://github.com/Muadh-Adekunle-Monsuru/chirp',
+				vercel: 'https://chirp-posts.vercel.app/',
+			},
+		},
+		{
 			title: 'Employee Management Dashboard',
 			img: '/mockups/p1-laptop.png.webp',
 			img2: '/mockups/p1-phone.png.webp',
