@@ -18,8 +18,8 @@ function App() {
 		{
 			title: 'Chirp',
 			img: '/mockups/p13-laptop.png.webp',
-			img2: '/mockups/p1-phone.png.webp',
-			description: 'A text only microblogging site.',
+			img2: '/mockups/p13-mobile.png.webp',
+			description: 'A text only microblogging site. Made with React',
 			stack: [
 				'Redux',
 				'Tanstack Query',
