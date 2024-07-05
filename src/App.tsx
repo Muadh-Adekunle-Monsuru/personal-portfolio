@@ -16,6 +16,27 @@ function App() {
 	};
 	const carouselData = [
 		{
+			title: 'Domain Address Locator',
+			img: '/mockups/p14-laptop.png.webp',
+			img2: '/mockups/p14-mobile.png.webp',
+			description:
+				'A domain address tracker. Converts domain address to ip address and shows the geographic location of the ip address.',
+			stack: [
+				'NextJS',
+				'Leaflet',
+				'React-Leaflet',
+				'ipify',
+				'Vercel',
+				'Tailwind',
+				'Typescript',
+			],
+			links: {
+				github:
+					'https://github.com/Muadh-Adekunle-Monsuru/domain-address-tracker',
+				vercel: 'https://domain-address-tracker.vercel.app/',
+			},
+		},
+		{
 			title: 'Chirp',
 			img: '/mockups/p13-laptop.png.webp',
 			img2: '/mockups/p13-mobile.png.webp',
