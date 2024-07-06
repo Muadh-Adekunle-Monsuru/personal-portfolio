@@ -321,7 +321,7 @@ function App() {
 						I am a third-year university student and full-stack developer
 						specializing in web and mobile development. Proficient in React
 						Native, Tailwind CSS, and TypeScript, with a focus on utilizing
-						Supabase and MongoDB for database solutions.
+						Supabase and MongoDB for database solutions
 					</motion.p>
 					<motion.a
 						className='flex lg:w-56 p-2 px-5 font-semibold items-center bg-white my-7 rounded-lg py-4 gap-3 shadow-sm justify-center cursor-pointer select-none'
