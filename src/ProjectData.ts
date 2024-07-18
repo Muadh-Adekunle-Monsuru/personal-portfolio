@@ -1,5 +1,94 @@
 export const ProjectData = [
 	{
+		title: 'Account Statement Visualizer',
+		img: '/mockups/p18-laptop.png.webp',
+		img2: '/mockups/p18-mobile.png.webp',
+		description:
+			'An application to analyize your account statments with beautiful graphs.',
+		stack: [
+			'Vite',
+			'React',
+			'Google Gemmini',
+			'Shadcn-Ui',
+			'PdfReader',
+			'Recharts',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github:
+				'https://github.com/Muadh-Adekunle-Monsuru/AccountStatementVisualizer',
+			vercel: 'https://account-statement-visualizer.vercel.app/',
+		},
+	},
+	{
+		title: 'Basic Dept',
+		img: '/mockups/p17-laptop.png.webp',
+		img2: '/mockups/p17-mobile.png.webp',
+		description: 'An interactive landing page.',
+		stack: [
+			'Vite',
+			'React',
+			'React Video Player',
+			'Framer Motion',
+			'React Swiper',
+			'Intersection Observer',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/Basic-Dept',
+			vercel: 'https://basic-dept-mu.vercel.app/',
+		},
+	},
+	{
+		title: 'Jotion',
+		img: '/mockups/p16-laptop.png.webp',
+		img2: '/mockups/p16-mobile.png.webp',
+		description: 'A minimalist note taking app, inspired by Notion.',
+		stack: [
+			'NextJS',
+			'Zustand',
+			'Convex',
+			'Clerk',
+			'Vercel',
+			'Shadcn-Ui',
+			'Blocknote',
+			'Sonner',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/my-notion',
+			vercel: 'https://just-jotion.vercel.app/',
+		},
+	},
+	{
+		title: 'Marcado Casa',
+		img: '/mockups/p15-laptop.png.webp',
+		img2: '/mockups/p15-mobile.png.webp',
+		description:
+			'An ecommerce site to find your ideal apartment effortlessly with curated listings and simple booking. Sell items hassle-free in our marketplace, connecting with eager buyers. ',
+		stack: [
+			'NextJS',
+			'Redux',
+			'Ag-Grid',
+			'Cloudinary',
+			'Vercel',
+			'EmailJs',
+			'React Swiper',
+			'AOS',
+			'Framer',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github:
+				'https://github.com/Muadh-Adekunle-Monsuru/mercado/tree/main/mercado-user',
+			vercel: 'https://marcadocasa.ng/',
+		},
+	},
+	{
 		title: 'Domain Address Locator',
 		img: '/mockups/p14-desktop.png.webp',
 		img2: '/mockups/p14-mobile.png.webp',
