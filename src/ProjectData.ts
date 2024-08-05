@@ -1,5 +1,77 @@
 export const ProjectData = [
 	{
+		title: 'Sennep',
+		img: '/mockups/p22-laptop.png.webp',
+		img2: '/mockups/p22-mobile.png.webp',
+		description: 'Using Rive React to create animations on a landing page.',
+		stack: ['Vite', 'Rive', 'Framer Motion', 'Tailwind'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/sennep',
+			vercel: 'https://sennep.vercel.app/',
+		},
+	},
+	{
+		title: 'Issue Tracker',
+		img: '/mockups/p21-laptop.png.webp',
+		img2: '/mockups/p21-mobile.png.webp',
+		description:
+			'View, Create, Update, and Edit Issues. View issue summary with insightful charts.',
+		stack: [
+			'NextJS',
+			'Prisma',
+			'MongoDb',
+			'Auth0',
+			'Sentry',
+			'Zod',
+			'Convex',
+			'React Markdown',
+			'Recharts',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/issueTracker',
+			vercel: 'https://issue-tracker-beta-blue.vercel.app/',
+		},
+	},
+	{
+		title: 'Horizon Banking',
+		img: '/mockups/p20-laptop.png.webp',
+		img2: '/mockups/p20-mobile.png.webp',
+		description:
+			'Manage your finacials with Horizon. Make tranasctions, create accounts and view income.',
+		stack: [
+			'NextJS',
+			'Prisma',
+			'MongoDb',
+			'PDF-Lib',
+			'Sentry',
+			'Zod',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/horizon-banking',
+			vercel: 'https://horizon-banking-app-olive.vercel.app/',
+		},
+	},
+	{
+		title: 'Déplacé Maison',
+		img: '/mockups/p19-laptop.png.webp',
+		img2: '/mockups/p19-mobile.png.webp',
+		description:
+			'Replication of Déplacé Maison, Learning to create visually captivating landing pages',
+		stack: [
+			'Vite',
+			'React',
+			'Swiper',
+			'React-intersection-observer',
+			'Framer Motion',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/deplace-maison',
+			vercel: 'https://deplace-maison.vercel.app/',
+		},
+	},
+	{
 		title: 'Account Statement Visualizer',
 		img: '/mockups/p18-laptop.png.webp',
 		img2: '/mockups/p18-mobile.png.webp',

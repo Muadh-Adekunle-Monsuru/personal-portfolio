@@ -1,9 +1,9 @@
-import { ProjectData } from './ProjectData';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Githubicon from './assets/githubicon';
 import Globe from './assets/globe';
+import { ProjectData } from './ProjectData';
 
 export default function SwiperComponent() {
 	function generateGradientColor(index: number, totalRows: number) {
@@ -57,11 +57,10 @@ export default function SwiperComponent() {
                 `}
 			</style>
 			<Swiper
-				modules={[Navigation, Pagination]}
+				modules={[Navigation]}
 				spaceBetween={50}
 				slidesPerView={1}
 				navigation
-				pagination={{ clickable: true }}
 				className='h-full mySwiper '
 			>
 				{ProjectData.map((project) => (
