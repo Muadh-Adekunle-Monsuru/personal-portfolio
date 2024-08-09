@@ -1,8 +1,7 @@
 import 'swiper/css/bundle';
-import { Navigation, EffectCoverflow, EffectCards } from 'swiper/modules';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Githubicon from './assets/githubicon';
-import Globe from './assets/globe';
 import { ProjectData } from './ProjectData';
 
 export default function SwiperComponent() {
