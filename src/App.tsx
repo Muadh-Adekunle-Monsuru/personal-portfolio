@@ -82,6 +82,12 @@ function App() {
 						React Native, Tailwind CSS, and TypeScript, with a focus on
 						utilizing Supabase and MongoDB for database solutions.
 					</motion.p>
+					<img
+						src='http://ghchart.rshah.org/muadh-adekunle-monsuru'
+						alt=' Github Contribution chart'
+						className='mx-auto'
+					/>
+
 					<motion.a
 						className='flex lg:w-56 p-2 px-5 font-semibold items-center bg-white my-7 rounded-lg py-4 gap-3 shadow-sm justify-center cursor-pointer select-none'
 						initial={{ y: 10, opacity: 0 }}

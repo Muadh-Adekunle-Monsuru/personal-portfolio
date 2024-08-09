@@ -1,5 +1,5 @@
 import 'swiper/css/bundle';
-import { Navigation } from 'swiper/modules';
+import { Navigation, EffectCoverflow, EffectCards } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Githubicon from './assets/githubicon';
 import Globe from './assets/globe';
@@ -57,11 +57,13 @@ export default function SwiperComponent() {
                 `}
 			</style>
 			<Swiper
-				modules={[Navigation]}
+				modules={[Navigation, EffectCoverflow]}
 				spaceBetween={50}
 				slidesPerView={1}
 				navigation
-				className='h-full mySwiper '
+				className='h-full mySwiper cursor-grab'
+				effect='coverflow'
+				keyboard={true}
 			>
 				{ProjectData.map((project) => (
 					<SwiperSlide key={project.title}>
@@ -69,11 +71,11 @@ export default function SwiperComponent() {
 							<div className='h-1/2 md:h-3/4 w-full  object-contain flex items-center justify-center px-4'>
 								<img
 									src={project.img}
-									className='h-72  object-contain hover:scale-105 ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
+									className='h-72  object-contain ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
 								/>
 								<img
 									src={project.img2}
-									className='-ml-[100px] h-56 md:h-72 object-contain hover:scale-105 ease-in-out transition duration-500 z-20 drop-shadow-lg hover:drop-shadow-2xl'
+									className='-ml-[100px] h-56 md:h-72 object-contain  ease-in-out transition duration-500 z-20 drop-shadow-lg hover:drop-shadow-2xl'
 								/>
 							</div>
 							<div className='grid lg:flex justify-between backdrop-blur-sm h-1/2 md:h-1/4 p-3'>
@@ -104,8 +106,12 @@ export default function SwiperComponent() {
 											<Githubicon />
 										</div>
 									</a>
-									<a href={project.links.vercel} target='_blank'>
-										<Globe />
+									<a
+										href={project.links.vercel}
+										target='_blank'
+										className='px-8 bg-black text-white text-xs font-medium p-3 rounded-lg h-9'
+									>
+										{/* <Globe /> */}Visit
 									</a>
 								</div>
 							</div>

@@ -1,5 +1,37 @@
 export const ProjectData = [
 	{
+		title: 'Horizon Banking',
+		img: '/mockups/p20-laptop.png.webp',
+		img2: '/mockups/p20-mobile.png.webp',
+		description:
+			'Manage your finacials with Horizon. Make tranasctions, create accounts and view income.',
+		stack: [
+			'NextJS',
+			'Prisma',
+			'MongoDb',
+			'PDF-Lib',
+			'Sentry',
+			'Zod',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/horizon-banking',
+			vercel: 'https://horizon-banking-app-olive.vercel.app/',
+		},
+	},
+	{
+		title: 'Quanta',
+		img: '/mockups/p23-laptop.png.webp',
+		img2: '/mockups/p23-mobile.png.webp',
+		description:
+			'Manage your tasks in a kanban board styled task/note manager.',
+		stack: ['NextJS', 'DnDKit', 'Rive', 'Prisma', 'MongoDB'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/quanta',
+			vercel: 'https://quanta-seven.vercel.app/',
+		},
+	},
+	{
 		title: 'Sennep',
 		img: '/mockups/p22-laptop.png.webp',
 		img2: '/mockups/p22-mobile.png.webp',
@@ -30,26 +62,6 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/issueTracker',
 			vercel: 'https://issue-tracker-beta-blue.vercel.app/',
-		},
-	},
-	{
-		title: 'Horizon Banking',
-		img: '/mockups/p20-laptop.png.webp',
-		img2: '/mockups/p20-mobile.png.webp',
-		description:
-			'Manage your finacials with Horizon. Make tranasctions, create accounts and view income.',
-		stack: [
-			'NextJS',
-			'Prisma',
-			'MongoDb',
-			'PDF-Lib',
-			'Sentry',
-			'Zod',
-			'Typescript',
-		],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/horizon-banking',
-			vercel: 'https://horizon-banking-app-olive.vercel.app/',
 		},
 	},
 	{
