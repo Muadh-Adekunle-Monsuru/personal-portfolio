@@ -1,5 +1,24 @@
 export const ProjectData = [
 	{
+		title: 'Roomly',
+		img: '/mockups/p27-laptop.png.webp',
+		img2: '/mockups/p27-mobile.png.webp',
+		description: 'AirBnB inspired home rental service.',
+		stack: [
+			'NextJS',
+			'Prisma',
+			'MongoDb',
+			'Cloudinary',
+			'NextAuth',
+			'Zustand',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/roomly',
+			vercel: 'https://roomly.vercel.app/',
+		},
+	},
+	{
 		title: 'Halo Ai',
 		img: '/mockups/p25-laptop.png.webp',
 		img2: '/mockups/p25-mobile.png.webp',
