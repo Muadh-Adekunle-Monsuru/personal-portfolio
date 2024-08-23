@@ -1,5 +1,25 @@
 export const ProjectData = [
 	{
+		title: 'Halo Ai',
+		img: '/mockups/p25-laptop.png.webp',
+		img2: '/mockups/p25-mobile.png.webp',
+		description:
+			'An AI web app powered by Google"s Gemini for real-time insights and conversational interfaces.',
+		stack: [
+			'NextJS',
+			'Google Gemmini',
+			'Sentry',
+			'Vercel Ai',
+			'Clerk',
+			'Convex',
+			'Zustand',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/sayhalo-ai',
+			vercel: 'http://halo-ai.vercel.app/',
+		},
+	},
+	{
 		title: 'Horizon Banking',
 		img: '/mockups/p20-laptop.png.webp',
 		img2: '/mockups/p20-mobile.png.webp',
@@ -32,16 +52,18 @@ export const ProjectData = [
 		},
 	},
 	{
-		title: 'Sennep',
-		img: '/mockups/p22-laptop.png.webp',
-		img2: '/mockups/p22-mobile.png.webp',
-		description: 'Using Rive React to create animations on a landing page.',
-		stack: ['Vite', 'Rive', 'Framer Motion', 'Tailwind'],
+		title: 'AI Profile Picture Generator',
+		img: '/mockups/p24-laptop.png.webp',
+		img2: '/mockups/p24-mobile.png.webp',
+		description:
+			'Create stunning profile pictures effortlessly with Stable Diffusion!',
+		stack: ['NextJs', 'Fal Ai', 'Stable Diffusion', 'Typescript', 'Tailwind'],
 		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/sennep',
-			vercel: 'https://sennep.vercel.app/',
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/AI-Profile-Picture',
+			vercel: 'https://ai-profile-two.vercel.app/',
 		},
 	},
+
 	{
 		title: 'Issue Tracker',
 		img: '/mockups/p21-laptop.png.webp',
@@ -62,67 +84,6 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/issueTracker',
 			vercel: 'https://issue-tracker-beta-blue.vercel.app/',
-		},
-	},
-	{
-		title: 'Déplacé Maison',
-		img: '/mockups/p19-laptop.png.webp',
-		img2: '/mockups/p19-mobile.png.webp',
-		description:
-			'Replication of Déplacé Maison, Learning to create visually captivating landing pages',
-		stack: [
-			'Vite',
-			'React',
-			'Swiper',
-			'React-intersection-observer',
-			'Framer Motion',
-			'Typescript',
-		],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/deplace-maison',
-			vercel: 'https://deplace-maison.vercel.app/',
-		},
-	},
-	{
-		title: 'Account Statement Visualizer',
-		img: '/mockups/p18-laptop.png.webp',
-		img2: '/mockups/p18-mobile.png.webp',
-		description:
-			'An application to analyize your account statments with beautiful graphs.',
-		stack: [
-			'Vite',
-			'React',
-			'Google Gemmini',
-			'Shadcn-Ui',
-			'PdfReader',
-			'Recharts',
-			'Tailwind',
-			'Typescript',
-		],
-		links: {
-			github:
-				'https://github.com/Muadh-Adekunle-Monsuru/AccountStatementVisualizer',
-			vercel: 'https://account-statement-visualizer.vercel.app/',
-		},
-	},
-	{
-		title: 'Basic Dept',
-		img: '/mockups/p17-laptop.png.webp',
-		img2: '/mockups/p17-mobile.png.webp',
-		description: 'An interactive landing page.',
-		stack: [
-			'Vite',
-			'React',
-			'React Video Player',
-			'Framer Motion',
-			'React Swiper',
-			'Intersection Observer',
-			'Tailwind',
-			'Typescript',
-		],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/Basic-Dept',
-			vercel: 'https://basic-dept-mu.vercel.app/',
 		},
 	},
 	{
@@ -173,6 +134,98 @@ export const ProjectData = [
 		},
 	},
 	{
+		title: 'Chirp',
+		img: '/mockups/p13-laptop.png.webp',
+		img2: '/mockups/p13-mobile.png.webp',
+		description: 'A text only microblogging site. Made with React',
+		stack: [
+			'Redux',
+			'Tanstack Query',
+			'NextJs',
+			'MongoDB',
+			'Vercel',
+			'Tailwind',
+			'Framer Motion',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/chirp',
+			vercel: 'https://chirp-posts.vercel.app/',
+		},
+	},
+	{
+		title: 'Déplacé Maison',
+		img: '/mockups/p19-laptop.png.webp',
+		img2: '/mockups/p19-mobile.png.webp',
+		description:
+			'Replication of Déplacé Maison, Learning to create visually captivating landing pages',
+		stack: [
+			'Vite',
+			'React',
+			'Swiper',
+			'React-intersection-observer',
+			'Framer Motion',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/deplace-maison',
+			vercel: 'https://deplace-maison.vercel.app/',
+		},
+	},
+	{
+		title: 'Sennep',
+		img: '/mockups/p22-laptop.png.webp',
+		img2: '/mockups/p22-mobile.png.webp',
+		description: 'Using Rive React to create animations on a landing page.',
+		stack: ['Vite', 'Rive', 'Framer Motion', 'Tailwind'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/sennep',
+			vercel: 'https://sennep.vercel.app/',
+		},
+	},
+	{
+		title: 'Account Statement Visualizer',
+		img: '/mockups/p18-laptop.png.webp',
+		img2: '/mockups/p18-mobile.png.webp',
+		description:
+			'An application to analyize your account statments with beautiful graphs.',
+		stack: [
+			'Vite',
+			'React',
+			'Google Gemmini',
+			'Shadcn-Ui',
+			'PdfReader',
+			'Recharts',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github:
+				'https://github.com/Muadh-Adekunle-Monsuru/AccountStatementVisualizer',
+			vercel: 'https://account-statement-visualizer.vercel.app/',
+		},
+	},
+	{
+		title: 'Basic Dept',
+		img: '/mockups/p17-laptop.png.webp',
+		img2: '/mockups/p17-mobile.png.webp',
+		description: 'An interactive landing page.',
+		stack: [
+			'Vite',
+			'React',
+			'React Video Player',
+			'Framer Motion',
+			'React Swiper',
+			'Intersection Observer',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/Basic-Dept',
+			vercel: 'https://basic-dept-mu.vercel.app/',
+		},
+	},
+	{
 		title: 'Domain Address Locator',
 		img: '/mockups/p14-desktop.png.webp',
 		img2: '/mockups/p14-mobile.png.webp',
@@ -193,24 +246,24 @@ export const ProjectData = [
 			vercel: 'https://domain-address-tracker.vercel.app/',
 		},
 	},
+
 	{
-		title: 'Chirp',
-		img: '/mockups/p13-laptop.png.webp',
-		img2: '/mockups/p13-mobile.png.webp',
-		description: 'A text only microblogging site. Made with React',
+		title: 'Monorecos',
+		img: '/mockups/p26-laptop.png.webp',
+		img2: '/mockups/p26-mobile.png.webp',
+		description:
+			'Monorecos Landing Page. Learning to use Framer Motion useScroll to make element react to scroll.',
 		stack: [
-			'Redux',
-			'Tanstack Query',
-			'NextJs',
-			'MongoDB',
-			'Vercel',
-			'Tailwind',
+			'Vite',
+			'Lenis',
 			'Framer Motion',
+			'React Intersection Observer',
+			'Tailwind',
 			'Typescript',
 		],
 		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/chirp',
-			vercel: 'https://chirp-posts.vercel.app/',
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/monoceros',
+			vercel: 'https://monoceros-murex.vercel.app/',
 		},
 	},
 	{
