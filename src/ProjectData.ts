@@ -3,7 +3,8 @@ export const ProjectData = [
 		title: 'Roomly',
 		img: '/mockups/p27-laptop.png.webp',
 		img2: '/mockups/p27-mobile.png.webp',
-		description: 'AirBnB inspired home rental service.',
+		description:
+			'AirBnB inspired home rental service. Create reservations or post your apartment for rentals.',
 		stack: [
 			'NextJS',
 			'Prisma',
