@@ -44,7 +44,7 @@ export const ProjectData = [
 		img: '/mockups/p20-laptop.png.webp',
 		img2: '/mockups/p20-mobile.png.webp',
 		description:
-			'Manage your finacials with Horizon. Make tranasctions, create accounts and view income.',
+			'Manage your finacials with Horizon. Make tranasctions, create accounts and view income',
 		stack: [
 			'NextJS',
 			'Prisma',
