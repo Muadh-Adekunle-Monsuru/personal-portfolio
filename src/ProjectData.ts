@@ -1,5 +1,17 @@
 export const ProjectData = [
 	{
+		title: 'Bookmarks',
+		img: '/mockups/p30-laptop.png.webp',
+		img2: '/mockups/p30-mobile.png.webp',
+		description: 'Group and visualize your broswer bookrmarks with AI.',
+		stack: ['NextJs', 'Google Gemmini', 'Vercel AI', 'Typescript', 'Cheerios'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/bookmarks/tree/main',
+			vercel: 'https://bookmarks-lime.vercel.app/',
+		},
+	},
+
+	{
 		title: 'Roomly',
 		img: '/mockups/p27-laptop.png.webp',
 		img2: '/mockups/p27-mobile.png.webp',
@@ -171,6 +183,46 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/chirp',
 			vercel: 'https://chirp-posts.vercel.app/',
+		},
+	},
+	{
+		title: 'LIFEBLNC',
+		img: '/mockups/p29-laptop.png.webp',
+		img2: '/mockups/p29-mobile.png.webp',
+		description: 'LIFEBLNC Landing Page.',
+		stack: ['Vite', 'Framer Motion', 'Tailwind', 'Typescript', 'React Player'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/life-blnc/tree/main',
+			vercel: 'https://life-blnc.vercel.app/',
+		},
+	},
+	{
+		title: 'Donutverse',
+		img: '/mockups/p31-laptop.png.webp',
+		img2: '/mockups/p31-mobile.png.webp',
+		description: 'Donut universe, using ThreeJs for 3D graphics',
+		stack: ['ThreeJs', 'Tailwind', 'Vercel', 'HTML', 'CSS'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/3js-donut/tree/main',
+			vercel: 'https://3js-donut.vercel.app/',
+		},
+	},
+	{
+		title: 'Horizontal Scroll',
+		img: '/mockups/p28-laptop.png.webp',
+		img2: '/mockups/p28-mobile.png.webp',
+		description: 'Converting vertical scroll to horizontal scroll.',
+		stack: [
+			'Vite',
+			'React Intersection Observer',
+			'Framer Motion',
+			'Tailwind',
+			'Typescript',
+		],
+		links: {
+			github:
+				'https://github.com/Muadh-Adekunle-Monsuru/scroll-translation/tree/main',
+			vercel: 'https://scroll-wheat.vercel.app/',
 		},
 	},
 	{
