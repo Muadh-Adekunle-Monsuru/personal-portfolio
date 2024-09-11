@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Githubicon from './assets/githubicon';
 import LinkdinIcon from './assets/LinkdinIcon';
 import SwiperComponent from './SwiperComponent';
+import { Analytics } from '@vercel/analytics/react';
+
 function App() {
 	const scrollToSection = (id: string) => {
 		const element = document.getElementById(id);
@@ -17,6 +19,7 @@ function App() {
 
 	return (
 		<main className='font-inter text-[#404040] '>
+			<Analytics />
 			<div className='lg:h-screen flex items-center justify-center'>
 				<div className='lg:px-56 p-11  mx-auto w-auto'>
 					<div className='flex items-center gap-4'>
