@@ -1,5 +1,16 @@
 export const ProjectData = [
 	{
+		title: 'LiveDocs',
+		img: '/mockups/p33-laptop.png.webp',
+		img2: '/mockups/p33-mobile.png.webp',
+		description: 'Build collaborative experiences faster.',
+		stack: ['NextJs', 'Convex', 'Liveblocks', 'Typescript', 'Clerk'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/LiveDocs',
+			vercel: 'https://livedocs-blush.vercel.app/',
+		},
+	},
+	{
 		title: 'Taskly',
 		img: '/mockups/p32-laptop.png.webp',
 		img2: '/mockups/p32-mobile.png.webp',
@@ -82,18 +93,6 @@ export const ProjectData = [
 		},
 	},
 	{
-		title: 'Quanta',
-		img: '/mockups/p23-laptop.png.webp',
-		img2: '/mockups/p23-mobile.png.webp',
-		description:
-			'Manage your tasks in a kanban board styled task/note manager.',
-		stack: ['NextJS', 'DnDKit', 'Rive', 'Prisma', 'MongoDB'],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/quanta',
-			vercel: 'https://quanta-seven.vercel.app/',
-		},
-	},
-	{
 		title: 'AI Profile Picture Generator',
 		img: '/mockups/p24-laptop.png.webp',
 		img2: '/mockups/p24-mobile.png.webp',
@@ -103,29 +102,6 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/AI-Profile-Picture',
 			vercel: 'https://ai-profile-two.vercel.app/',
-		},
-	},
-
-	{
-		title: 'Issue Tracker',
-		img: '/mockups/p21-laptop.png.webp',
-		img2: '/mockups/p21-mobile.png.webp',
-		description:
-			'View, Create, Update, and Edit Issues. View issue summary with insightful charts.',
-		stack: [
-			'NextJS',
-			'Prisma',
-			'MongoDb',
-			'Auth0',
-			'Sentry',
-			'Zod',
-			'Convex',
-			'React Markdown',
-			'Recharts',
-		],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/issueTracker',
-			vercel: 'https://issue-tracker-beta-blue.vercel.app/',
 		},
 	},
 	{
@@ -193,6 +169,40 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/chirp',
 			vercel: 'https://chirp-posts.vercel.app/',
+		},
+	},
+	{
+		title: 'Quanta',
+		img: '/mockups/p23-laptop.png.webp',
+		img2: '/mockups/p23-mobile.png.webp',
+		description:
+			'Manage your tasks in a kanban board styled task/note manager.',
+		stack: ['NextJS', 'DnDKit', 'Rive', 'Prisma', 'MongoDB'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/quanta',
+			vercel: 'https://quanta-seven.vercel.app/',
+		},
+	},
+	{
+		title: 'Issue Tracker',
+		img: '/mockups/p21-laptop.png.webp',
+		img2: '/mockups/p21-mobile.png.webp',
+		description:
+			'View, Create, Update, and Edit Issues. View issue summary with insightful charts.',
+		stack: [
+			'NextJS',
+			'Prisma',
+			'MongoDb',
+			'Auth0',
+			'Sentry',
+			'Zod',
+			'Convex',
+			'React Markdown',
+			'Recharts',
+		],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/issueTracker',
+			vercel: 'https://issue-tracker-beta-blue.vercel.app/',
 		},
 	},
 	{
