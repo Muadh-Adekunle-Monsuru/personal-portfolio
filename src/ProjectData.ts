@@ -1,5 +1,16 @@
 export const ProjectData = [
 	{
+		title: 'Taskly',
+		img: '/mockups/p32-laptop.png.webp',
+		img2: '/mockups/p32-mobile.png.webp',
+		description: 'Organize your work and life.',
+		stack: ['NextJs', 'Convex', 'Vercel AI', 'Typescript', 'Zustand'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/Taskly',
+			vercel: 'https://taskly-teal.vercel.app/',
+		},
+	},
+	{
 		title: 'Bookmarks',
 		img: '/mockups/p30-laptop.png.webp',
 		img2: '/mockups/p30-mobile.png.webp',
@@ -10,7 +21,6 @@ export const ProjectData = [
 			vercel: 'https://bookmarks-lime.vercel.app/',
 		},
 	},
-
 	{
 		title: 'Roomly',
 		img: '/mockups/p27-laptop.png.webp',
@@ -339,7 +349,7 @@ export const ProjectData = [
 		},
 	},
 	{
-		title: 'Employee Management Dashboard',
+		title: 'Apollonia Dental',
 		img: '/mockups/p1-laptop.png.webp',
 		img2: '/mockups/p1-phone.png.webp',
 		description: 'An employee management dashboard for Appollonia Dentals',
@@ -395,7 +405,7 @@ export const ProjectData = [
 		},
 	},
 	{
-		title: 'Multi-Form Game Booking Page',
+		title: 'MultiForm Game Booking',
 		img: '/mockups/p10-laptop.png.webp',
 		img2: '/mockups/p10-mobile.png.webp',
 		description: 'A multi-paged form for booking a gaming service.',

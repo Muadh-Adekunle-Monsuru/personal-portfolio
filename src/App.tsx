@@ -106,11 +106,18 @@ function App() {
 					</motion.a>
 				</div>
 			</div>
-			<div className='h-screen md:p-10 p-3 py-10 lg:px-36' id='projects'>
+			<div
+				className='relative h-screen md:p-10 p-3 py-10 lg:px-36 flex flex-col items-center justify-center'
+				id='projects'
+			>
 				<div
-					className='container border-2 rounded-3xl w-full h-full shadow-lg '
+					className='relative container border-2 rounded-3xl max-w-[35rem]  mx-auto h-full shadow-lg max-h-[30rem] md:max-h-full '
 					id='main'
 				>
+					<div className='flex gap-2 items-center absolute -top-14 left-1/2'>
+						<img src='/arrownew.svg' className='size-14 rotate-90' />
+						<p className='font-medium italic'>swipe</p>
+					</div>
 					<SwiperComponent />
 				</div>
 			</div>
