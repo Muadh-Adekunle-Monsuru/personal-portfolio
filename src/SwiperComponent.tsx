@@ -1,6 +1,11 @@
 import 'swiper/css/bundle';
 import 'swiper/css/scrollbar';
-import { EffectCards } from 'swiper/modules';
+import {
+	EffectCards,
+	EffectCoverflow,
+	Navigation,
+	Pagination,
+} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Githubicon from './assets/githubicon';
 import { ProjectData } from './ProjectData';
@@ -36,10 +41,10 @@ export default function SwiperComponent() {
                 }
 
                 .mySwiper .swiper-pagination {
-                    bottom: -5px; /* Adjust bottom position */
+                    bottom: -35px; /* Adjust bottom position */
                     left: 50%; /* Center horizontally */
                     transform: translateX(-50%); /* Adjust for centering */
-                    z-index:40;
+                    z-index:9999;
                     position:absolute;
                 }
 
@@ -57,12 +62,14 @@ export default function SwiperComponent() {
                 `}
 			</style>
 			<Swiper
-				modules={[EffectCards]}
+				modules={[EffectCoverflow, Navigation, Pagination]}
 				spaceBetween={0}
 				slidesPerView={'auto'}
 				className='h-full mySwiper cursor-grab'
-				effect='cards'
+				effect='coverflow'
 				cardsEffect={{ slideShadows: false, perSlideOffset: 5 }}
+				navigation
+				pagination={{ type: 'bullets' }}
 			>
 				{ProjectData.map((project) => (
 					<SwiperSlide key={project.title} className='rounded-3xl shadow-2xl'>
