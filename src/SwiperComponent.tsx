@@ -1,11 +1,6 @@
 import 'swiper/css/bundle';
 import 'swiper/css/scrollbar';
-import {
-	EffectCards,
-	EffectCoverflow,
-	Navigation,
-	Pagination,
-} from 'swiper/modules';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Githubicon from './assets/githubicon';
 import { ProjectData } from './ProjectData';
