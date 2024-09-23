@@ -3,7 +3,8 @@ export const ProjectData = [
 		title: 'LiveDocs',
 		img: '/mockups/p33-laptop.png.webp',
 		img2: '/mockups/p33-mobile.png.webp',
-		description: 'Build collaborative experiences faster.',
+		description:
+			'Build collaborative experiences faster. The Google Docs Alternative.',
 		stack: ['NextJs', 'Convex', 'Liveblocks', 'Typescript', 'Clerk'],
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/LiveDocs',
