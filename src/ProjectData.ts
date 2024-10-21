@@ -58,7 +58,7 @@ export const ProjectData = [
 		img: '/mockups/p25-laptop.png.webp',
 		img2: '/mockups/p25-mobile.png.webp',
 		description:
-			'An AI web app powered by Google"s Gemini for real-time insights and conversational interfaces.',
+			'An AI web app powered by Google"s Gemini for real-time insights and conversational interfaces',
 		stack: [
 			'NextJS',
 			'Google Gemmini',
