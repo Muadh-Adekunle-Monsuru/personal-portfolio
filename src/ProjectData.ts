@@ -1,5 +1,38 @@
 export const ProjectData = [
 	{
+		title: 'Messenger',
+		img: '/mockups/p36-laptop.png.webp',
+		img2: '/mockups/p36-mobile.png.webp',
+		description: 'Talk. Share. Connect.',
+		stack: ['NextJs', 'Google Gemmini', 'Clerk', 'Zustand', 'DnD Kit'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/messanger/tree/main',
+			vercel: 'https://messenger-seven-rust.vercel.app/',
+		},
+	},
+	{
+		title: 'Taskly',
+		img: '/mockups/p35-laptop.png.webp',
+		img2: '/mockups/p35-mobile.png.webp',
+		description: 'Organize your work and life, finally.',
+		stack: ['NextJs', 'Google Gemmini', 'Clerk', 'Zustand', 'DnD Kit'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/Taskly/tree/main',
+			vercel: 'https://taskly-teal.vercel.app/',
+		},
+	},
+	{
+		title: 'Hirelens',
+		img: '/mockups/p34-laptop.png.webp',
+		img2: '/mockups/p34-mobile.png.webp',
+		description: 'Revolutionize your hiring with AI-Powered precision.',
+		stack: ['NextJs', 'ThreeJs', 'Tailwindcsss', 'Swiper', 'AOS'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/hirelens/tree/main',
+			vercel: 'https://hirelens.vercel.app/',
+		},
+	},
+	{
 		title: 'LiveDocs',
 		img: '/mockups/p33-laptop.png.webp',
 		img2: '/mockups/p33-mobile.png.webp',
