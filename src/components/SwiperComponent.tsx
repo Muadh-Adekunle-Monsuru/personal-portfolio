@@ -2,7 +2,7 @@ import 'swiper/css/bundle';
 import 'swiper/css/scrollbar';
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Githubicon from './assets/githubicon';
+import Githubicon from '../assets/githubicon';
 import { ProjectData } from './ProjectData';
 
 export default function SwiperComponent() {
@@ -75,7 +75,7 @@ export default function SwiperComponent() {
 							<div className='h-1/2 md:h-3/4 w-full  object-contain flex items-center justify-center px-4'>
 								<img
 									src={project.img}
-									className='h-60  object-contain ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
+									className='h-60 object-contain ease-in-out transition duration-500 drop-shadow-lg hover:drop-shadow-2xl'
 								/>
 								<img
 									src={project.img2}

@@ -510,18 +510,6 @@ export const ProjectData = [
 		},
 	},
 	{
-		title: 'Flights Into Lagos',
-		img: '/mockups/rn3.png.webp',
-		img2: '/mockups/rn4.png.webp',
-		description:
-			'An android application that lists flights inbound into Murital Muhammad International Airport and updates hourly from realtime airtime data.',
-		stack: ['React Native', 'Expo', 'Expo SqlLite', 'OpenSky API', 'twrnc'],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/flights',
-			vercel: 'https://github.com/Muadh-Adekunle-Monsuru/flights',
-		},
-	},
-	{
 		title: 'Where in the world?',
 		img: '/mockups/p5-laptop.png.webp',
 		img2: '/mockups/p5-mobile.png.webp',
@@ -575,17 +563,6 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Klusterthon-Group-105/lingoQL-frontend',
 			vercel: 'https://lingoql.onrender.com/',
-		},
-	},
-	{
-		title: 'Dictionary',
-		img: '/mockups/rn1.png.webp',
-		img2: '/mockups/rn2.png.webp',
-		description: 'An android dictionary and synonyms application.',
-		stack: ['React Native', 'Expo', 'Axios'],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/words-app',
-			vercel: 'https://github.com/Muadh-Adekunle-Monsuru/words-app',
 		},
 	},
 ];
