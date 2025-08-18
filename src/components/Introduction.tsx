@@ -1,8 +1,8 @@
-import { ArrowDownIcon, ArrowRightIcon } from '@heroicons/react/20/solid';
+import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import LinkdinIcon from '../assets/LinkdinIcon';
 import Githubicon from '../assets/githubicon';
-import { Link } from 'react-router-dom';
 
 export default function Introduction() {
 	return (

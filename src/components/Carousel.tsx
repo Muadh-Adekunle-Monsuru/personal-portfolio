@@ -4,9 +4,9 @@ import {
 	ArrowLeftCircleIcon,
 	ArrowRightCircleIcon,
 } from '@heroicons/react/24/outline';
+import Githubicon from '../assets/githubicon';
+import Globe from '../assets/globe';
 
-import Githubicon from './assets/githubicon';
-import Globe from './assets/globe';
 const slideVariants = {
 	hiddenRight: {
 		x: '100%',
