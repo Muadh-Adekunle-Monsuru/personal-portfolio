@@ -1,5 +1,38 @@
 export const ProjectData = [
 	{
+		title: 'PQ-AI',
+		img: '/mockups/pqai.png.webp',
+		img2: '/mockups/pqai.png.webp',
+		description: 'Smarter Studyin, Stronger Performance.',
+		stack: ['NextJs', 'Google Gemmini'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/',
+			vercel: 'https://www.pqai.com.ng/explore',
+		},
+	},
+	{
+		title: 'Premier Prep',
+		img: '/mockups/premierprep.png.webp',
+		img2: '/mockups/premierprep.png.webp',
+		description: 'Your Path to Academic Excellence Starts Here',
+		stack: ['Vite'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru',
+			vercel: 'https://www.premierprep.com.ng/',
+		},
+	},
+	{
+		title: 'AnNujoom',
+		img: '/mockups/annujoom.png.webp',
+		img2: '/mockups/annujoom.png.webp',
+		description: 'AnNujoom: Digital Islamic Cooperative Banking is Here.',
+		stack: ['NextJs', 'Next Auth', 'Supabase'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/',
+			vercel: 'https://annujoom.vercel.app/',
+		},
+	},
+	{
 		title: 'Messenger',
 		img: '/mockups/p36-laptop.png.webp',
 		img2: '/mockups/p36-mobile.png.webp',
