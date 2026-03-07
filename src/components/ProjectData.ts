@@ -1,9 +1,43 @@
 export const ProjectData = [
 	{
+		title: 'Learnmate',
+		img: '/mockups/learnmate.webp',
+		img2: '/mockups/learnmate.webp',
+		description:
+			'An edu-tech platform designed to digitize essential school processes.',
+		stack: ['Vite', 'Tailwind CSS', 'FastAPI'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/learnmate',
+			vercel: 'https://learnmate-tau.vercel.app/',
+		},
+	},
+	{
+		title: 'Smartspend',
+		img: '/mockups/smart-spend.webp',
+		img2: '/mockups/smart-spend.webp',
+		description: 'Understand your money. Control your future.',
+		stack: ['NextJs', 'Inngest', 'Convex'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/SmartSpend',
+			vercel: 'http://smartspend.muadh.com.ng/',
+		},
+	},
+	{
+		title: 'L & K Concept Intl Limited',
+		img: '/mockups/landk.webp',
+		img2: '/mockups/landk.webp',
+		description: 'A premier construction company in Nigeria.',
+		stack: ['WordPress'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/',
+			vercel: 'https://landkconceptintl.com/',
+		},
+	},
+	{
 		title: 'PQ-AI',
 		img: '/mockups/pqai.png.webp',
 		img2: '/mockups/pqai.png.webp',
-		description: 'Smarter Studyin, Stronger Performance.',
+		description: 'Smarter Studying, Stronger Performance.',
 		stack: ['NextJs', 'Google Gemmini'],
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/',
@@ -75,17 +109,6 @@ export const ProjectData = [
 		links: {
 			github: 'https://github.com/Muadh-Adekunle-Monsuru/LiveDocs',
 			vercel: 'https://livedocs-blush.vercel.app/',
-		},
-	},
-	{
-		title: 'Taskly',
-		img: '/mockups/p32-laptop.png.webp',
-		img2: '/mockups/p32-mobile.png.webp',
-		description: 'Organize your work and life.',
-		stack: ['NextJs', 'Convex', 'Vercel AI', 'Typescript', 'Zustand'],
-		links: {
-			github: 'https://github.com/Muadh-Adekunle-Monsuru/Taskly',
-			vercel: 'https://taskly-teal.vercel.app/',
 		},
 	},
 	{
