@@ -1,5 +1,17 @@
 export const ProjectData = [
 	{
+		title: 'Link Party',
+		img: '/mockups/linkparty.webp',
+		img2: '/mockups/linkparty.webp',
+		description:
+			'The simplest way to connect at any event.',
+		stack: ['NextJS', 'Tailwind CSS', 'Convex', 'Clerk'],
+		links: {
+			github: 'https://github.com/Muadh-Adekunle-Monsuru/linkparty',
+			vercel: 'https://linkparty.vercel.app/',
+		},
+	},
+	{
 		title: 'Learnmate',
 		img: '/mockups/learnmate.webp',
 		img2: '/mockups/learnmate.webp',
