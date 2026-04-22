@@ -1,15 +1,15 @@
+import { Html, Stars } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Stars, Html } from "@react-three/drei";
-import { useRef, useMemo, useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { FaLaptopCode } from "react-icons/fa";
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 import * as THREE from "three";
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiMongodb,
-} from "react-icons/si";
-import { FaLaptopCode } from "react-icons/fa";
 
 // --- 3D Components ---
 
@@ -28,29 +28,6 @@ function CameraRig() {
     state.camera.lookAt(0, 0, 0);
   });
   return null;
-}
-
-function HeroText() {
-  return (
-    <Html position={[0, 0, -5]} center transform zIndexRange={[10, 0]}>
-      <div className="flex flex-col items-center select-none pointer-events-none">
-        <h1
-          className="text-5xl md:text-[8vw] font-black uppercase text-white tracking-widest whitespace-nowrap"
-          style={{
-            textShadow:
-              "6px 0px 0px rgba(0, 255, 255, 0.7), -6px 0px 0px rgba(255, 0, 255, 0.7)",
-          }}
-        >
-          FULL-STACK.
-          <br />
-          FULL-SCOPE.
-        </h1>
-        <p className="mt-4 font-mono text-xl md:text-3xl text-gray-300 tracking-[0.3em]">
-          DATA. CODE. DREAMS.
-        </p>
-      </div>
-    </Html>
-  );
 }
 
 // --- HUD UI Components ---
