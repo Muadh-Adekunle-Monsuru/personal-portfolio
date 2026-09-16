@@ -63,6 +63,10 @@ function ActionGrid() {
   const buttons = [
     { label: "[ > VIEW.PROJECTS ]", action: () => navigate("/projects") },
     {
+      label: "[ > SCHOLARSHIP.ADVICE ]",
+      action: () => navigate("/scholarship-advice"),
+    },
+    {
       label: "[ > RESUME.PDF ]",
       action: () =>
         window.open(
