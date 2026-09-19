@@ -4,11 +4,14 @@ import { motion } from 'framer-motion';
 import {
 	AGGREGATORS,
 	COMMUNITIES,
+	CV_TEMPLATES,
 	ERASMUS_CATALOGUE,
 	ERASMUS_HANDBOOK,
 	IELTS_RESOURCES,
 	PERSONAL_LINKS,
 	PROOF_OF_RESIDENCY,
+	REFERENCE_GUIDES,
+	SOP_EXAMPLES,
 	TOC_SECTIONS,
 	TOEFL_RESOURCES,
 	TRACKING_TOOLS,
@@ -308,6 +311,8 @@ export default function ScholarshipAdvicePage() {
 										scholars before you submit.
 									</p>
 								</Prose>
+								<ResourceLabel>Examples & guides</ResourceLabel>
+								<LinkGrid links={SOP_EXAMPLES} />
 
 								<SubHeading>CV (Europass / academic CV)</SubHeading>
 								<Prose>
@@ -324,6 +329,8 @@ export default function ScholarshipAdvicePage() {
 										are boosters; put them where they're easy to find.
 									</p>
 								</Prose>
+								<ResourceLabel>Templates & examples</ResourceLabel>
+								<LinkGrid links={CV_TEMPLATES} />
 
 								<SubHeading>Reference letters</SubHeading>
 								<Prose>
@@ -345,6 +352,8 @@ export default function ScholarshipAdvicePage() {
 										who can champion you.
 									</p>
 								</Prose>
+								<ResourceLabel>Guides</ResourceLabel>
+								<LinkGrid links={REFERENCE_GUIDES} />
 							</section>
 
 							{/* PROFILE BOOSTERS */}

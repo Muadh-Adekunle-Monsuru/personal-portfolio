@@ -212,6 +212,106 @@ export const TRANSCRIPT_SAMPLE: AdviceLink = {
 	href: 'https://www.wes.org/wp-content/uploads/2025/10/Sample_CXC_Report_2025-scaled.png',
 };
 
+export const SOP_EXAMPLES: AdviceLink[] = [
+	{
+		label: 'My motivation letter',
+		href: 'https://docs.google.com/document/d/1znRdtmRG58B8gOGtTJOgQ5kkxmr_1sbC4a73vVYbAz0/edit?usp=sharing',
+		note: 'Sample from my application',
+	},
+	{
+		label: 'SOP example document',
+		href: 'https://docs.google.com/document/d/1iQcW2DFOD_06In55bEIh6if4zJrYtT3ZKIC4FQCyb0A/edit?tab=t.0',
+	},
+	{
+		label: 'SOP sample (Drive)',
+		href: 'https://drive.google.com/file/d/17JZXbSUaYXdVTnnYQwq-cze3MtoqNS27/view',
+	},
+	{
+		label: 'SOP example document 2',
+		href: 'https://docs.google.com/document/d/1OxJnOOpn7BXjwz2Q6ETOsZmGKqJiKwBs7HBxrlz5Pcs/edit?tab=t.0',
+	},
+	{
+		label: 'SOP sample (Drive) 2',
+		href: 'https://drive.google.com/file/d/1xyi5Yx28yY-MqPEIw0WbLF1CoWVhdAtY/view',
+	},
+	{
+		label: 'SOP sample (Drive) 3',
+		href: 'https://drive.google.com/file/d/1KknGlrKg4JKt8uo81XvgzgCHjL8xN1SI/view',
+	},
+	{
+		label: 'SOP sample (Drive) 4',
+		href: 'https://drive.google.com/file/d/1Xa4RAaI5zZ3HTmDPl8S1TcbXGApZpR7H/view',
+	},
+	{
+		label: 'YouTube — motivation letter guide',
+		href: 'https://www.youtube.com/watch?v=N7YZYWm-RYw',
+	},
+	{
+		label: 'SOP sample (Drive) 5',
+		href: 'https://drive.google.com/file/d/1D59aLrXqc074dB5fYsof5iCm1HDHPPJn/view',
+	},
+	{
+		label: 'YouTube — motivation letter guide 2',
+		href: 'https://www.youtube.com/watch?v=2EjbwAcksrc',
+	},
+];
+
+export const CV_TEMPLATES: AdviceLink[] = [
+	{
+		label: 'My CV',
+		href: 'https://drive.google.com/file/d/11mcTvVGDbjtRZWE6AwBjsPfKUWBlaLbh/view?usp=sharing',
+		note: 'Sample from my application',
+	},
+	{
+		label: 'Europass CV builder',
+		href: 'https://europass.europa.eu/en/create-europass-cv',
+		note: 'Official EU CV format used by many programmes',
+	},
+	{
+		label: 'CV sample (Drive)',
+		href: 'https://drive.google.com/file/d/1AxwFeXLPhe2EtolKMdfO3_O84xP64i7E/view',
+	},
+	{
+		label: 'CV sample (Drive) 2',
+		href: 'https://drive.google.com/file/d/1ehNUnGbBj_g8jIfbgmbsrjqgqoikJkGH/view',
+	},
+	{
+		label: 'CV sample (Drive) 3',
+		href: 'https://drive.google.com/file/d/1cB8emwY3JbbApxlrMZXEj7VkVLERaL6-/view?usp=sharing',
+	},
+	{
+		label: 'Illinois Grad College — CV tips & samples',
+		href: 'https://grad.illinois.edu/document/student-success/curriculum-vitae-tips-and-samples',
+	},
+	{
+		label: 'YouTube — CV tips',
+		href: 'https://www.youtube.com/watch?v=owiejvTlZko&t=1s',
+	},
+	{
+		label: 'YouTube — CV tips 2',
+		href: 'https://www.youtube.com/watch?v=3bk96aEu0pA&t=1s',
+	},
+];
+
+export const REFERENCE_GUIDES: AdviceLink[] = [
+	{
+		label: 'Recommendation letter guide',
+		href: 'https://docs.google.com/document/d/1Mi7c37loGehwfZN3j09-QVs_TWlMjJcK/edit',
+	},
+	{
+		label: 'Recommendation letter guide 2',
+		href: 'https://docs.google.com/document/d/1ANVVR8QgAtuCqxCE4amBlUrh78v2W2qu/edit#bookmark=id.gjdgxs',
+	},
+	{
+		label: 'Recommendation sample (Drive)',
+		href: 'https://drive.google.com/file/d/1Y-1trO_FT7HsSuKb7ytBpMaweRxCNd8M/view?usp=sharing',
+	},
+	{
+		label: 'Recommendation sample (Drive) 2',
+		href: 'https://drive.google.com/file/d/1llnwZQ6fzh1Qe3sJf3NLXY_qn03tmLSJ/view?usp=sharing',
+	},
+];
+
 export const VETTING_CHECKLIST = [
 	'Eligibility',
 	'Coverage (tuition / stipend / travel / insurance)',
