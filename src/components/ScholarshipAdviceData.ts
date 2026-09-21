@@ -33,22 +33,34 @@ export const PERSONAL_LINKS = {
 export const TOEFL_RESOURCES: AdviceLink[] = [
 	{
 		label: 'The Official Guide to the TOEFL iBT Test',
-		href: 'https://www.ets.org/toefl/test-takers/ibt/prepare/official-guide.html',
+		href: 'https://hawallieltblog.wordpress.com/wp-content/uploads/2011/04/the-official-guide-to-the-toefl-ibt.pdf',
 		note: 'ETS — authentic practice tests and scoring criteria',
 	},
 	{
 		label: 'TOEFL iBT Test Prep Planner',
-		href: 'https://www.ets.org/toefl/test-takers/ibt/prepare/tips.html',
+		href: 'https://www-stg-pr.pt.ets.org/pdfs/toefl/toefl-getting-you-to-test-day.pdf',
 		note: 'Free ETS 8-week study schedule PDF',
 	},
 	{
 		label: 'TOEFL iBT Quick Prep & practice questions',
-		href: 'https://www.ets.org/toefl/test-takers/ibt/prepare/quick-prep.html',
+		href: 'https://www.eu.ets.org/pdfs/toefl/toefl-ibt-test-overview.pdf',
 		note: 'Free past-test questions from ETS',
 	},
 	{
 		label: "Magoosh's Guide to the TOEFL iBT",
-		href: 'https://magoosh.com/toefl/toefl-ebook/',
+		href: 'https://d296n67kxwq0ge.cloudfront.net/attachments/6784/assets/originals.pdf?1574536869',
+		note: 'Free eBook — strategies, vocab, study plans',
+	},{
+		label: "Writing Guide to the TOEFL ",
+		href: 'https://magoosh-production.s3.amazonaws.com/attachments/6421/assets/originals.pdf?1558217726',
+		note: 'Free eBook — strategies, vocab, study plans',
+	},{
+		label: "Quick Prep Guide to the TOEFL ",
+		href: 'https://www.marianas.edu/media/TestingServices/TOEFL/TOEFL_Practice_Questions.pdf',
+		note: 'Free eBook — strategies, vocab, study plans',
+	},{
+		label: "Practive Questions",
+		href: 'https://www.ets.org/s/toefl-itp/l1v3_ebook/itp-practice-test-level-1-volume-3-ebook.pdf',
 		note: 'Free eBook — strategies, vocab, study plans',
 	},
 ];
@@ -56,13 +68,8 @@ export const TOEFL_RESOURCES: AdviceLink[] = [
 export const IELTS_RESOURCES: AdviceLink[] = [
 	{
 		label: 'The Official Cambridge Guide to IELTS',
-		href: 'https://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts/official-cambridge-guide-ielts',
+		href: 'https://drive.google.com/file/d/12YIeVJKhdAFLkSzEu1JDvQ6dY8xlyfD1/view?usp=sharing',
 		note: 'Definitive all-in-one Cambridge guide',
-	},
-	{
-		label: 'Cambridge IELTS Authentic Practice Tests',
-		href: 'https://www.cambridge.org/gb/cambridgeenglish/catalog/cambridge-english-exams-ielts',
-		note: 'Gold-standard retired exam papers',
 	},
 	{
 		label: 'The Key to IELTS Success (Pauline Cullen)',
