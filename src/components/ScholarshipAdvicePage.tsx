@@ -1,5 +1,4 @@
 import { useEffect, useState, type ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
 	AGGREGATORS,
@@ -20,6 +19,7 @@ import {
 	WEBINARS,
 	type AdviceLink,
 } from './ScholarshipAdviceData';
+import SiteHeader from './SiteHeader';
 
 function ExternalLink({ href, children }: { href: string; children: ReactNode }) {
 	return (
@@ -27,7 +27,7 @@ function ExternalLink({ href, children }: { href: string; children: ReactNode })
 			href={href}
 			target='_blank'
 			rel='noreferrer'
-			className='text-sky-300 underline underline-offset-4 decoration-sky-300/40 hover:text-white hover:decoration-white transition-colors break-words'
+			className='link-btn break-words'
 		>
 			{children}
 		</a>
@@ -40,17 +40,23 @@ function LinkRow({ link }: { link: AdviceLink }) {
 			href={link.href}
 			target='_blank'
 			rel='noreferrer'
-			className='group flex flex-col gap-1 border border-zinc-700 bg-zinc-900/80 px-4 py-3.5 hover:border-zinc-500 hover:bg-zinc-800/80 transition-colors duration-200'
+			className='group flex flex-col gap-1 border border-neutral-200 bg-neutral-50 px-4 py-3.5 transition-colors duration-200 hover:border-neutral-400 hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-900/80 dark:hover:border-neutral-500 dark:hover:bg-neutral-800/80'
 		>
-			<span className='text-base text-zinc-100 group-hover:text-white transition-colors'>{link.label}</span>
-			{link.note && <span className='text-sm text-zinc-400 leading-relaxed'>{link.note}</span>}
+			<span className='text-base text-neutral-900 transition-colors group-hover:text-black dark:text-neutral-100 dark:group-hover:text-white'>
+				{link.label}
+			</span>
+			{link.note && (
+				<span className='text-sm leading-relaxed text-neutral-500 dark:text-neutral-400'>
+					{link.note}
+				</span>
+			)}
 		</a>
 	);
 }
 
 function LinkGrid({ links }: { links: AdviceLink[] }) {
 	return (
-		<div className='grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4'>
+		<div className='mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2'>
 			{links.map((link) => (
 				<LinkRow key={link.href} link={link} />
 			))}
@@ -60,7 +66,7 @@ function LinkGrid({ links }: { links: AdviceLink[] }) {
 
 function SectionHeading({ children }: { children: ReactNode }) {
 	return (
-		<h2 className='text-2xl md:text-3xl font-semibold tracking-tight text-white mb-6'>
+		<h2 className='mb-6 text-2xl font-semibold tracking-tight text-neutral-900 dark:text-white md:text-3xl'>
 			{children}
 		</h2>
 	);
@@ -68,7 +74,7 @@ function SectionHeading({ children }: { children: ReactNode }) {
 
 function SubHeading({ children }: { children: ReactNode }) {
 	return (
-		<h3 className='text-lg md:text-xl font-medium tracking-tight text-zinc-100 mt-10 mb-3'>
+		<h3 className='mb-3 mt-10 text-lg font-medium tracking-tight text-neutral-800 dark:text-neutral-100 md:text-xl'>
 			{children}
 		</h3>
 	);
@@ -76,7 +82,7 @@ function SubHeading({ children }: { children: ReactNode }) {
 
 function ResourceLabel({ children }: { children: ReactNode }) {
 	return (
-		<p className='text-sm font-medium tracking-wide text-zinc-400 mt-6 mb-1 uppercase'>
+		<p className='mb-1 mt-6 text-sm font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400'>
 			{children}
 		</p>
 	);
@@ -84,7 +90,7 @@ function ResourceLabel({ children }: { children: ReactNode }) {
 
 function Prose({ children }: { children: ReactNode }) {
 	return (
-		<div className='space-y-5 text-lg md:text-xl text-zinc-200 leading-[1.75]'>
+		<div className='space-y-5 text-lg leading-[1.75] text-neutral-700 dark:text-neutral-300 md:text-xl'>
 			{children}
 		</div>
 	);
@@ -92,10 +98,10 @@ function Prose({ children }: { children: ReactNode }) {
 
 function BulletList({ items }: { items: string[] }) {
 	return (
-		<ul className='mt-4 space-y-3 text-lg md:text-xl text-zinc-200 leading-[1.75]'>
+		<ul className='mt-4 space-y-3 text-lg leading-[1.75] text-neutral-700 dark:text-neutral-300 md:text-xl'>
 			{items.map((item) => (
 				<li key={item} className='flex gap-3'>
-					<span className='text-sky-400 shrink-0 mt-1'>•</span>
+					<span className='mt-1 shrink-0 text-sky-600 dark:text-sky-400'>•</span>
 					<span>{item}</span>
 				</li>
 			))}
@@ -104,7 +110,6 @@ function BulletList({ items }: { items: string[] }) {
 }
 
 export default function ScholarshipAdvicePage() {
-	const navigate = useNavigate();
 	const [activeId, setActiveId] = useState(TOC_SECTIONS[0].id);
 
 	useEffect(() => {
@@ -135,44 +140,37 @@ export default function ScholarshipAdvicePage() {
 	};
 
 	return (
-		<div className='min-h-screen bg-[#0a0a0a] text-zinc-100'>
-			<div className='w-full min-h-screen overflow-y-auto px-5 py-8 md:px-12 md:py-12'>
-				<div className='max-w-6xl mx-auto'>
-					{/* Header */}
-					<div className='mb-10 md:mb-14 flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-800 pb-8 gap-6'>
+		<div className='min-h-screen bg-white text-[#222] dark:bg-[#0d0d10] dark:text-[#e8e8e8]'>
+			<SiteHeader maxWidthClass='max-w-6xl' />
+			<div className='w-full min-h-screen overflow-y-auto px-5 pb-8 pt-12 md:px-12 md:pb-12'>
+				<div className='mx-auto max-w-6xl font-geist'>
+					<div className='mb-10 flex flex-col justify-between gap-6 border-b border-neutral-200 pb-8 dark:border-neutral-800 md:mb-14 md:flex-row md:items-end'>
 						<div>
-							<button
-								onClick={() => navigate('/')}
-								className='text-sky-300/90 hover:text-white transition-colors mb-6 text-base'
-							>
-								← Back to home
-							</button>
-							<h1 className='text-3xl md:text-5xl font-semibold tracking-tight text-white'>
+							<h1 className='text-3xl font-semibold tracking-tight md:text-5xl'>
 								Scholarship advice
 							</h1>
-							<p className='mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl leading-relaxed'>
+							<p className='mt-4 max-w-2xl text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 md:text-xl'>
 								A postgraduate roadmap from an Erasmus Mundus CyberMACS journey.
 							</p>
 						</div>
-						<div className='text-left md:text-right text-sm text-zinc-500 space-y-1'>
+						<div className='space-y-1 text-left text-sm text-neutral-500 md:text-right'>
 							<p>{TOC_SECTIONS.length} sections</p>
 							<p>Fully funded pathway guide</p>
 						</div>
 					</div>
 
-					{/* Mobile TOC */}
 					<nav
 						aria-label='Section navigation'
-						className='lg:hidden mb-10 -mx-1 px-1 overflow-x-auto flex gap-2 pb-2'
+						className='-mx-1 mb-10 flex gap-2 overflow-x-auto px-1 pb-2 lg:hidden'
 					>
 						{TOC_SECTIONS.map((s) => (
 							<button
 								key={s.id}
 								onClick={() => scrollTo(s.id)}
-								className={`shrink-0 text-sm px-3.5 py-2 border transition-colors duration-200 ${
+								className={`shrink-0 border px-3.5 py-2 text-sm transition-colors duration-200 ${
 									activeId === s.id
-										? 'border-zinc-500 text-white bg-zinc-800'
-										: 'border-zinc-800 text-zinc-400 hover:border-zinc-600 hover:text-zinc-200'
+										? 'border-neutral-400 bg-neutral-100 text-neutral-900 dark:border-neutral-500 dark:bg-neutral-800 dark:text-white'
+										: 'border-neutral-200 text-neutral-500 hover:border-neutral-400 hover:text-neutral-800 dark:border-neutral-800 dark:text-neutral-400 dark:hover:border-neutral-600 dark:hover:text-neutral-200'
 								}`}
 							>
 								{s.short}
@@ -181,23 +179,22 @@ export default function ScholarshipAdvicePage() {
 					</nav>
 
 					<div className='flex gap-10 xl:gap-14'>
-						{/* Desktop sticky TOC */}
-						<aside className='hidden lg:block w-60 shrink-0'>
+						<aside className='hidden w-60 shrink-0 lg:block'>
 							<nav
 								aria-label='Table of contents'
-								className='sticky top-8 space-y-0.5 border border-zinc-800 bg-zinc-900/60 p-4'
+								className='sticky top-24 space-y-0.5 border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/60'
 							>
-								<p className='text-xs font-medium tracking-wide text-zinc-500 mb-4 uppercase'>
+								<p className='mb-4 text-xs font-medium uppercase tracking-wide text-neutral-500'>
 									Contents
 								</p>
 								{TOC_SECTIONS.map((s) => (
 									<button
 										key={s.id}
 										onClick={() => scrollTo(s.id)}
-										className={`w-full text-left text-sm leading-snug px-2.5 py-2.5 border-l-2 transition-colors duration-200 ${
+										className={`w-full border-l-2 px-2.5 py-2.5 text-left text-sm leading-snug transition-colors duration-200 ${
 											activeId === s.id
-												? 'border-sky-400 text-white bg-zinc-800/80'
-												: 'border-transparent text-zinc-500 hover:text-zinc-200 hover:border-zinc-600'
+												? 'border-sky-500 bg-neutral-100 text-neutral-900 dark:border-sky-400 dark:bg-neutral-800/80 dark:text-white'
+												: 'border-transparent text-neutral-500 hover:border-neutral-400 hover:text-neutral-800 dark:hover:border-neutral-600 dark:hover:text-neutral-200'
 										}`}
 									>
 										{s.label}
@@ -228,13 +225,13 @@ export default function ScholarshipAdvicePage() {
 										all out the hard way.
 									</p>
 									<p>
-										<strong className='text-white'>Who this is for.</strong> Final-year students planning
+										<strong className='text-neutral-900 dark:text-white'>Who this is for.</strong> Final-year students planning
 										early, recent graduates assembling documents, and applicants rebuilding after
 										rejections. If you're dreaming of studying abroad on a fully-funded award, this guide
 										is for you.
 									</p>
 									<p>
-										<strong className='text-white'>How to use this page.</strong> Don't try to do everything
+										<strong className='text-neutral-900 dark:text-white'>How to use this page.</strong> Don't try to do everything
 										in one day. Skim it once for the big picture, bookmark it, then return section by
 										section, passport, English, SOP, CV, referees, as you hit each stage. Treat it as a
 										checklist and reference manual.
@@ -257,7 +254,7 @@ export default function ScholarshipAdvicePage() {
 									<p>
 										Once you have it: keep at least six months of validity beyond your intended travel dates;
 										make glare-free scans of the data pages; name files clearly (e.g.{' '}
-										<code className='text-sky-300 text-base md:text-lg bg-zinc-900 px-1.5 py-0.5 rounded-sm'>
+										<code className='rounded-sm bg-sky-100 px-1.5 py-0.5 text-base text-sky-800 dark:bg-zinc-900 dark:text-sky-300 md:text-lg'>
 											Lastname_Firstname_Passport.pdf
 										</code>); and store
 										everything in a dedicated Drive folder so you can share a link instantly.
@@ -279,8 +276,8 @@ export default function ScholarshipAdvicePage() {
 									</p>
 									<p>
 										While each programme sets its own minimum, a solid benchmark is{' '}
-										<strong className='text-white'>80+ / 120 on TOEFL</strong>, roughly{' '}
-										<strong className='text-white'>IELTS 6.5</strong>.
+										<strong className='text-neutral-900 dark:text-white'>80+ / 120 on TOEFL</strong>, roughly{' '}
+										<strong className='text-neutral-900 dark:text-white'>IELTS 6.5</strong>.
 									</p>
 								</Prose>
 								<ResourceLabel>TOEFL resources</ResourceLabel>
@@ -293,7 +290,7 @@ export default function ScholarshipAdvicePage() {
 									<p>
 										Your SOP is your voice, often the first real impression the committee gets. Show how your
 										passion and academic work bridge a real knowledge gap. The{' '}
-										<strong className='text-white'>STAR</strong> method helps: Situation (a national or
+										<strong className='text-neutral-900 dark:text-white'>STAR</strong> method helps: Situation (a national or
 										global problem), Task (what you've already done), Action (how the master's fits), Result
 										(outcomes and post-study impact).
 									</p>
@@ -427,7 +424,7 @@ export default function ScholarshipAdvicePage() {
 										'Featured section: papers, repos, certificates, hackathon or volunteer wins',
 									]}
 								/>
-								<p className='mt-5 text-base md:text-lg text-zinc-400'>
+								<p className='mt-5 text-base text-neutral-500 dark:text-neutral-400 md:text-lg'>
 									Mine:{' '}
 									<ExternalLink href={PERSONAL_LINKS.linkedin}>{PERSONAL_LINKS.linkedin}</ExternalLink>
 								</p>
@@ -442,7 +439,7 @@ export default function ScholarshipAdvicePage() {
 										it.
 									</p>
 								</Prose>
-								<p className='mt-5 text-base md:text-lg text-zinc-400'>
+								<p className='mt-5 text-base text-neutral-500 dark:text-neutral-400 md:text-lg'>
 									Mine:{' '}
 									<ExternalLink href={PERSONAL_LINKS.portfolio}>{PERSONAL_LINKS.portfolio}</ExternalLink>
 								</p>
@@ -451,15 +448,15 @@ export default function ScholarshipAdvicePage() {
 								<Prose>
 									<p>
 										Use a clean address like{' '}
-										<code className='text-sky-300 text-base md:text-lg bg-zinc-900 px-1.5 py-0.5 rounded-sm'>
+										<code className='rounded-sm bg-sky-100 px-1.5 py-0.5 text-base text-sky-800 dark:bg-zinc-900 dark:text-sky-300 md:text-lg'>
 											firstname.lastname@…
 										</code>
 										. Set a signature with your name, degree, school, and one or two links so every
 										outreach looks consistent.
 									</p>
 								</Prose>
-								<div className='mt-5 border border-zinc-700 bg-zinc-900/80 px-5 py-4 text-base md:text-lg text-zinc-200 space-y-1'>
-									<p className='text-white font-medium'>Muadh Adekunle Monsuru</p>
+								<div className='mt-5 space-y-1 border border-neutral-200 bg-neutral-50 px-5 py-4 text-base text-neutral-700 dark:border-neutral-700 dark:bg-neutral-900/80 dark:text-neutral-200 md:text-lg'>
+									<p className='font-medium text-neutral-900 dark:text-white'>Muadh Adekunle Monsuru</p>
 									<p>BSc Computer Science | Fountain University</p>
 									<p>Software Developer</p>
 									<p>
@@ -484,7 +481,7 @@ export default function ScholarshipAdvicePage() {
 								<SectionHeading>5) Scholarship discovery + tracking</SectionHeading>
 								<Prose>
 									<p>
-										<strong className='text-white'>Start here:</strong> open the official Erasmus Mundus
+										<strong className='text-neutral-900 dark:text-white'>Start here:</strong> open the official Erasmus Mundus
 										Catalogue and scan for programmes that match, or are only tangentially related to, your
 										field. Many people miss good fits because the title doesn't perfectly match their
 										background.
@@ -525,8 +522,8 @@ export default function ScholarshipAdvicePage() {
 								<div className='mt-4'>
 									<LinkRow link={ERASMUS_HANDBOOK} />
 								</div>
-								<div className='mt-6 border border-zinc-600 bg-zinc-900 px-5 py-5 text-base md:text-lg text-zinc-200 leading-relaxed'>
-									<strong className='text-white'>CyberMACS note:</strong> My cohort is the last planned
+								<div className='mt-6 border border-neutral-300 bg-neutral-50 px-5 py-5 text-base leading-relaxed text-neutral-700 dark:border-neutral-600 dark:bg-neutral-900 dark:text-neutral-200 md:text-lg'>
+									<strong className='text-neutral-900 dark:text-white'>CyberMACS note:</strong> My cohort is the last planned
 									intake for CyberMACS for now, unless the consortium's funding is renewed. Don't fixate on
 									that one programme, use the catalogue and this roadmap to find other strong Erasmus Mundus
 									and fully-funded options in tech, engineering, and cybersecurity.
@@ -584,16 +581,16 @@ export default function ScholarshipAdvicePage() {
 										Allah's hands. It is not by our handwork alone.
 									</p>
 								</Prose>
-								<blockquote className='mt-10 border-l-2 border-zinc-600 pl-5 py-1'>
-									<p className='text-lg md:text-xl text-zinc-100 italic leading-relaxed'>
+								<blockquote className='mt-10 border-l-2 border-neutral-300 py-1 pl-5 dark:border-neutral-600'>
+									<p className='text-lg italic leading-relaxed text-neutral-800 dark:text-neutral-100 md:text-xl'>
 										“And whoever relies upon Allah – then He is sufficient for him. Indeed, Allah will
 										accomplish His purpose. Allah has already set for everything a [decreed] extent.”
 									</p>
-									<footer className='mt-4 text-sm text-zinc-500'>
+									<footer className='mt-4 text-sm text-neutral-500'>
 										,  Surah At-Talaq 65:3
 									</footer>
 								</blockquote>
-								<p className='mt-8 text-lg md:text-xl text-zinc-400'>
+								<p className='mt-8 text-lg text-neutral-500 dark:text-neutral-400 md:text-xl'>
 									Keep pushing, keep praying, and your time will come.
 								</p>
 							</section>

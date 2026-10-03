@@ -81,7 +81,11 @@ type SearchItem = {
 	external?: boolean;
 };
 
-export default function SiteHeader() {
+export default function SiteHeader({
+	maxWidthClass = 'max-w-[75ch]',
+}: {
+	maxWidthClass?: string;
+}) {
 	const navigate = useNavigate();
 	const [now, setNow] = useState(() => formatIstanbulClock(new Date()));
 	const [searchOpen, setSearchOpen] = useState(false);
@@ -165,7 +169,9 @@ export default function SiteHeader() {
 		<>
 			<header className='relative h-16 w-full'>
 				<div className='fixed z-40 flex h-20 w-full justify-between bg-white/50 backdrop-blur-[20px] backdrop-saturate-150 dark:bg-[#0D0D1050]'>
-					<nav className='m-auto flex w-full max-w-[75ch] items-center justify-between px-5'>
+					<nav
+						className={`m-auto flex w-full items-center justify-between px-5 ${maxWidthClass}`}
+					>
 						<Link
 							to='/'
 							title='Home'
@@ -180,6 +186,12 @@ export default function SiteHeader() {
 								className='text-sm opacity-50 hover:opacity-100'
 							>
 								projects
+							</Link>
+							<Link
+								to='/scholarship-advice'
+								className='hidden text-sm opacity-50 hover:opacity-100 sm:inline'
+							>
+								advice
 							</Link>
 							<ThemeToggle />
 							<a
