@@ -4,6 +4,11 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Muadh Adekunle Monsuru — software engineer based in Lagos."
+		/>
+		<meta name="theme-color" content="#0d0d10" />
 		<link
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		/>
@@ -14,8 +19,22 @@
 			rel="stylesheet"
 		/>
 		<title>Muadh Monsur</title>
+		<script>
+			!(function () {
+				var root = document.documentElement;
+				root.classList.remove('dark', 'light');
+				var stored = localStorage.getItem('theme');
+				if (stored) {
+					root.classList.add(stored.replace(/"/g, ''));
+				} else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					root.classList.add('dark');
+				} else {
+					root.classList.add('light');
+				}
+			})();
+		</script>
 	</head>
-	<body class="bg-fixed">
+	<body>
 		<div id="root"></div>
 		<script type="module" src="/src/main.tsx"></script>
 	</body>

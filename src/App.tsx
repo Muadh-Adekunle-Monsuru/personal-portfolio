@@ -1,14 +1,13 @@
 import { Analytics } from "@vercel/analytics/react";
-import "./App.css";
-import FuturisticLanding from "./components/FuturisticLanding";
 import { useEffect } from "react";
+import MinimalLanding from "./components/MinimalLanding";
 
 function App() {
   useEffect(() => {
     const notifyMe = async () => {
       const token = import.meta.env.VITE_TELEGRAM_TOKEN;
       const chatId = import.meta.env.VITE_CHAT_ID;
-      const text = "🚀 Someone just viewed your futuristic portfolio!";
+      const text = "🚀 Someone just viewed your portfolio!";
 
       try {
         await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
@@ -26,9 +25,7 @@ function App() {
   return (
     <>
       <Analytics />
-      <main className="font-inter">
-        <FuturisticLanding />
-      </main>
+      <MinimalLanding />
     </>
   );
 }
