@@ -20,6 +20,16 @@ import {
 	type AdviceLink,
 } from './ScholarshipAdviceData';
 import SiteHeader from './SiteHeader';
+import { usePageMeta } from '../hooks/usePageMeta';
+
+const SCHOLARSHIP_OG = {
+	title: 'Scholarship advice | Muadh Monsur',
+	description:
+		'A postgraduate roadmap from an Erasmus Mundus CyberMACS journey — documents, English tests, SOPs, discovery tips, and fully-funded pathway guidance.',
+	image:
+		'https://res.cloudinary.com/dzrkcnt5h/image/upload/v1791057766/Screenshot_from_2026-10-03_23-02-19_hkfdgn.png',
+	url: 'https://www.muadh.com.ng/scholarship-advice',
+} as const;
 
 function ExternalLink({ href, children }: { href: string; children: ReactNode }) {
 	return (
@@ -111,6 +121,8 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function ScholarshipAdvicePage() {
 	const [activeId, setActiveId] = useState(TOC_SECTIONS[0].id);
+
+	usePageMeta(SCHOLARSHIP_OG);
 
 	useEffect(() => {
 		const elements = TOC_SECTIONS.map((s) => document.getElementById(s.id)).filter(Boolean) as HTMLElement[];
